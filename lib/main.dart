@@ -41,7 +41,7 @@ class MyHomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 72),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
                 child: Center(
                   child: ElevatedButton(
                     onPressed: () {
@@ -60,7 +60,7 @@ class MyHomePage extends StatelessWidget {
                 )
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 72),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
                 child: Center(
                   child: ElevatedButton(
                     onPressed: () {
@@ -74,7 +74,7 @@ class MyHomePage extends StatelessWidget {
                 )
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 72),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
                 child: Center(
                   child: ElevatedButton(
                     onPressed: () {
@@ -88,7 +88,7 @@ class MyHomePage extends StatelessWidget {
                 )
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 72),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
                 child: Center(
                   child: ElevatedButton(
                     onPressed: () {

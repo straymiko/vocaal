@@ -37,12 +37,12 @@ class NavDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.event_note),
+            leading: Icon(Icons.history),
             title: Text('Dialog History'),
             onTap: () => {Navigator.of(context).pop()},
           ),
           ListTile(
-            leading: Icon(Icons.history),
+            leading: Icon(Icons.event_note),
             title: Text('Speech Commands'),
             onTap: () => {Navigator.of(context).pop()},
           ),
