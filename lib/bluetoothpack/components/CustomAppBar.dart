@@ -5,13 +5,14 @@ import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
 import 'package:vocaal/bluetoothpack/HomePage.dart';
 import 'package:vocaal/bluetoothpack/provider/StatusConexaoProvider.dart';
 import 'package:provider/provider.dart';
-//import 'package:vocaal/nav-drawer.dart';
+import 'package:vocaal/nav-drawer.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String? Title;
   final bool? isBluetooth;
   final bool? isDiscovering;
   final Function? onPress;
+  //final Function? BackButton;
 
   const CustomAppBar({
     Key? key,
@@ -19,6 +20,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.isBluetooth,
     this.isDiscovering,
     this.onPress,
+    //this.BackButton,
   }) : super(key: key);
   @override
   Size get preferredSize => const Size.fromHeight(100);
@@ -30,9 +32,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           .setDevice(null);
     }
     return Scaffold(
-      //drawer: NavDrawer(),
+      //drawer: NavDrawer!(),
       appBar: AppBar(
-        leading: BackButton(),
+        //leading: BackButton!(),
         toolbarHeight: 100.0,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(bottom: Radius.circular(5))),
