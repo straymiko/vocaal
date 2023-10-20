@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vocaal/main.dart';
 import 'package:vocaal/createAccount.dart';
+import 'package:vocaal/forgotpassword.dart';
 
 void main() {
   runApp(MaterialApp( home: Login(),));
@@ -114,6 +115,16 @@ class _LoginState extends State<Login> {
                       )
                   )
               ),
+              RichText(
+                text: TextSpan(
+                  children: <TextSpan>[
+                    TextSpan(
+                      text: "For new users, please click Create Account!",
+                      style: TextStyle(color: Colors.purple, fontSize: 25, fontWeight: FontWeight.bold)
+                    )
+                  ]
+                )
+              ),
               Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
                   child: Center(
@@ -127,7 +138,31 @@ class _LoginState extends State<Login> {
                           child: Text("Create Account")
                       )
                   )
-              )
+              ),
+              RichText(
+                  text: TextSpan(
+                      children: <TextSpan>[
+                        TextSpan(
+                            text: "Forgot your password?",
+                            style: TextStyle(color: Colors.purple, fontSize: 25, fontWeight: FontWeight.bold)
+                        )
+                      ]
+                  )
+              ),
+              Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+                  child: Center(
+                      child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => forgotPassword()),
+                            );
+                          },
+                          child: Text("Forgot Password")
+                      )
+                  )
+              ),
             ],
           ),
         ),
