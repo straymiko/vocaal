@@ -72,6 +72,34 @@ class MyHomePage extends StatelessWidget {
                     child: Text("Bluetooth")
                   )
                 )
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 72),
+                child: Center(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Profile()), //placeholder name for Speech Commands
+                      );
+                    },
+                    child: Text("Speech Commands")
+                  )
+                )
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 72),
+                child: Center(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Profile()), //placeholder name for Dialog History
+                      );
+                    },
+                    child: Text("Dialog History")
+                  )
+                )
               )
             ],
           )

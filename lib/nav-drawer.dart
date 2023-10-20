@@ -42,6 +42,11 @@ class NavDrawer extends StatelessWidget {
             onTap: () => {Navigator.of(context).pop()},
           ),
           ListTile(
+            leading: Icon(Icons.history),
+            title: Text('Speech Commands'),
+            onTap: () => {Navigator.of(context).pop()},
+          ),
+          ListTile(
               leading: Icon(Icons.bluetooth),
               title: Text('Bluetooth'),
               onTap: () {
