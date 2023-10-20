@@ -119,7 +119,7 @@ class _LoginState extends State<Login> {
                 text: TextSpan(
                   children: <TextSpan>[
                     TextSpan(
-                      text: "For new users, please click Create Account!",
+                      text: "For new users, please click below",
                       style: TextStyle(color: Colors.purple, fontSize: 25, fontWeight: FontWeight.bold)
                     )
                   ]
