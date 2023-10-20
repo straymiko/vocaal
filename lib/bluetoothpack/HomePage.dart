@@ -2,7 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:vocaal/nav-drawer.dart';
+//import 'package:vocaal/nav-drawer.dart';
 import 'package:vocaal/bluetoothpack/SelecionarDispositivo.dart';
 import 'package:vocaal/bluetoothpack/ControlePrincipal.dart';
 import 'package:provider/provider.dart';
@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
     }
 
     return Scaffold(
-      drawer: NavDrawer(),
+      //drawer: NavDrawer(),
       appBar: CustomAppBar(
         Title: 'Remote Arduino',
         isBluetooth: true,
