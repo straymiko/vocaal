@@ -44,7 +44,11 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.event_note),
             title: Text('Speech Commands'),
-            onTap: () => {Navigator.of(context).pop()},
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/speechCommands1');
+                Navigator.pushReplacementNamed(context, '/speechCommands1');
+              }
           ),
           ListTile(
               leading: Icon(Icons.bluetooth),
@@ -53,6 +57,15 @@ class NavDrawer extends StatelessWidget {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, '/Bluetooth');
                 Navigator.pushReplacementNamed(context, '/Bluetooth');
+              }
+          ),
+          ListTile(
+              leading: Icon(Icons.format_list_numbered),
+              title: Text('Word Bank'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/WordBank');
+                Navigator.pushReplacementNamed(context, '/WordBank');
               }
           ),
           ListTile(

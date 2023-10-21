@@ -3,6 +3,8 @@ import 'package:vocaal/bluetooth.dart';
 import 'package:vocaal/login.dart';
 import 'package:vocaal/profilemain.dart';
 import 'package:vocaal/nav-drawer.dart';
+import 'package:vocaal/wordBank.dart';
+import 'package:vocaal/speechCommands1.dart';
 
 
 void main() => runApp(MyApp());
@@ -20,7 +22,10 @@ class MyApp extends StatelessWidget {
         '/': (context) => Login(),
         '/profile': (context) => Profile(),
         '/MyHomePage': (context) => MyHomePage(),
-        '/Bluetooth': (context) => Bluetooth()
+        '/Bluetooth': (context) => Bluetooth(),
+        '/WordBank': (context) => wordBank(),
+        '/speechCommands1': (context) => speechCommands1()
+
       },
     );
   }
@@ -80,7 +85,7 @@ class MyHomePage extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Profile()), //placeholder name for Speech Commands
+                        MaterialPageRoute(builder: (context) => speechCommands1()), //placeholder name for Speech Commands
                       );
                     },
                     child: Text("Speech Commands")
@@ -100,6 +105,20 @@ class MyHomePage extends StatelessWidget {
                     child: Text("Dialog History")
                   )
                 )
+              ),
+              Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
+                  child: Center(
+                      child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => wordBank()), //placeholder name for Dialog History
+                            );
+                          },
+                          child: Text("Word Bank")
+                      )
+                  )
               )
             ],
           )
